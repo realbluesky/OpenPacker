@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPacker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="controls">
+      <input id="number" type="number" value="10">
+      <a id="pack" href="#">Pack</a>
+    </div>
+    <div id="backing">
+      <canvas id="canvas" height="1024" width="1024"></canvas>
+    </div>
+    <script type="application/dart" src="packer_web.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+name: open_packer
+description: A web application
+dependencies:
+  browser: any
+  stagexl: any
