@@ -7,8 +7,7 @@ OpenPacker is [going to be] a completely free, open-source, online texture packe
 
 You can preview the packing test suite at http://openpacker.realbluesky.com
 
-OpenPacker implements the MaxRects algorithm and original heuristics as clearly described by Jukka Jylänki at https://github.com/juj/RectangleBinPack
-These are the same Packing Methods used by the well-known commercial product, [TexturePacker](http://www.codeandweb.com/texturepacker)
+OpenPacker implements the MaxRects algorithm and original heuristics as clearly described by Jukka Jylänki at https://github.com/juj/RectangleBinPack. These are the same Packing Methods used by the well-known commercial product, [TexturePacker](http://www.codeandweb.com/texturepacker)
 
 OpenPacker also introduces a new Packing Method - "Weighted Total Area" - which generally outperforms previous methods by ~10%
 
