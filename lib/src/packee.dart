@@ -2,12 +2,14 @@ part of open_packer;
 
 class Packee extends Sprite {
   Bitmap visual;
+  TextField label;
   int color;
   bool rotated;
   bool trimmed;
   
-  Packee(int x, int y, int w, int h, {int color: 0xAA000000}) {
+  Packee(String name, int x, int y, int w, int h, {int color: 0xFFFFFFFF}) {
     this
+        ..name = name
         ..x = x
         ..y = y
         ..color = color
@@ -17,11 +19,14 @@ class Packee extends Sprite {
     var rect = new BitmapData(w, h, true, color);
     visual = new Bitmap(rect);
     
-    addChild(visual);
-   
-    onMouseClick.listen((e) => print('x:$x y:$y w:$width h:$height rot:$rotation'));
-    onMouseRightClick.listen((e) => rotation+=PI/2);
+    label = new TextField(name, new TextFormat('sans-serif', min(50,min(w, h)*.5), Color.White))
+      ..width = w - 5
+      ..height = h
+      ..x = 5;
     
+    addChild(visual);
+    addChild(label);
+     
   }
   
 }
